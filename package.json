@@ -1,25 +1,28 @@
 {
-  "name": "project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "type": "module",
-  "keywords": [
-    "node",
-    "express",
-    "mongodb",
-    "javascript"
-  ],
-  "author": "Jaydip",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^17.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
-  }
+    "name": "project",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js"
+    },
+    "type": "module",
+    "keywords": [
+        "node",
+        "express",
+        "mongodb",
+        "javascript"
+    ],
+    "author": "Jaydip",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "dotenv": "^17.2.1",
+        "express": "^5.1.0",
+        "mongodb": "^6.18.0",
+        "mongoose": "^8.17.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10",
+        "prettier": "^3.6.2"
+    }
 }
