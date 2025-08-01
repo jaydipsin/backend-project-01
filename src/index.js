@@ -5,10 +5,19 @@
 import * as dotenv from "dotenv";
 
 import connectDB from "./db/db.js";
+import { app } from "./app.js";
 
 dotenv.config();
 
-connectDB();
+connectDB()
+    .then((res) =>
+        app.listen(process.env.PORT || 3000, () => {
+            console.log("Server is connected to 8000");
+        })
+    )
+    .catch((err) => {
+        throw err;
+    });
 
 /*
 
